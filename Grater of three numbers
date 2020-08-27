@@ -1,0 +1,26 @@
+#To find Grater of three numbers
+
+num1 = float(input('Enter the first number:'))
+num2 = float(input('Enter the second number'))
+num3 = float(input('Enter the third number:'))
+
+#Logic:
+
+if(num1 >= num2) and (num1 >= num3):
+    Grater = num1
+elif(num2 >= num1) and (num2 >= num3):
+    Grater = num2
+else:
+    Grater = num3
+
+#Result
+
+print('The Grater number among three numbers is : ',Grater)
+
+
+output :
+
+Enter the first number:5
+Enter the second number8
+Enter the third number:2
+The Grater number among three numbers is :  8.0
