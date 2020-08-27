@@ -1,0 +1,26 @@
+#LCM of two numbers
+
+#Taking input :
+x = float(input('Enter the first number :'))
+y = float(input('Enter the second number ;'))
+
+#Logic :
+if (x > y):
+    Greater = x
+else:
+    Greater = y
+while(True):
+    if ((Greater % x == 0) and (Greater % y == 0)):
+        Lcm = Greater
+        break
+    Greater += 1
+
+#Printing Result :
+
+print('The LCM is :',Lcm)
+
+
+output :
+Enter the first number :52
+Enter the second number ;85
+The LCM is : 4420.0
