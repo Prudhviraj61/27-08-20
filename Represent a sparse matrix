@@ -1,0 +1,58 @@
+# matrix to sparse matrix
+
+# function display a matrix
+def showMatrix(matrix):
+    for row in matrix:
+        for element in row:
+            print(element, end=" ")
+        print()
+
+
+# Converting to a spare matrix:
+def convertToSpareMatrix(matrix):
+    spareMatrix = []   #creating emty matrix
+
+    #logic for spare matrix:
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
+            if matrix[i][j] != 0:
+                temp = []
+           #addind row value to coloumb
+                temp.append(i)
+                temp.append(j)
+                temp.append(matrix[i][j])
+                spareMatrix.append(temp)
+# displaying the sparse matrix
+    print("\nSpare Matrix: ")
+    showMatrix(spareMatrix)
+
+# initializing a normal matrix
+normalMatrix = [[5, 0, 0, 0],
+                [0, 6, 0, 0],
+                [0, 0, 7, 0],
+                [0, 0, 0, 8],
+                [9, 0, 0, 0]]
+
+# Showing the matrix
+showMatrix(normalMatrix)
+
+# converting the matrix to sparse
+#Show Matrix:
+convertToSpareMatrix(normalMatrix)
+
+output:
+"C:\Users\home\PycharmProjects\Hello world\venv\Scripts\python.exe" "C:/Users/home/PycharmProjects/Hello world/spare matrix.py"
+5 0 0 0 
+0 6 0 0 
+0 0 7 0 
+0 0 0 8 
+9 0 0 0 
+
+Spare Matrix: 
+0 0 5 
+1 1 6 
+2 2 7 
+3 3 8 
+4 0 9 
+
+Process finished with exit code 0
