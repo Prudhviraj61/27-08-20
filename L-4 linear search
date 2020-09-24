@@ -1,0 +1,26 @@
+pos=-1
+
+def search (list,n):
+    i=0
+
+    while i<len(list):
+        if list[i]==n:
+            globals()['pos']=i
+            return True
+        i=i+1
+
+    return False
+
+list=[1,8,4,2,9,7]
+n=4
+
+if search(list,n):
+    print("found at",pos+1)
+else:
+    print("not found")
+    
+    output:
+    "C:\Users\home\PycharmProjects\Hello world\venv\Scripts\python.exe" "C:/Users/home/PycharmProjects/Hello world/linear search.py"
+found at 3
+
+Process finished with exit code 0
