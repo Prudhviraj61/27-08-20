@@ -1,0 +1,37 @@
+#Linear search with user function and dynamic input
+def linearsearch(arr, elem):
+    for i in range(len(arr)):
+        if (arr[i] == elem):
+            return i + 1
+        else:
+            continue
+    return -1
+
+#Giving input
+limit = int(input("Enter the limit : "))
+
+#iterating
+arry = []
+for i in range(0, limit):
+    ele = input("Enter alphabet : ")
+    arry.append(ele)
+
+#entering element to find
+findele = input('Enter element to find : ')
+pos = str(linearsearch(arry, findele))
+
+#printing output
+print("The element found at index " + pos)
+
+output:
+"C:\Users\home\PycharmProjects\Hello world\venv\Scripts\python.exe" "C:/Users/home/PycharmProjects/Hello world/Linear search with user define.py"
+Enter the limit : 5
+Enter alphabet : a
+Enter alphabet : d
+Enter alphabet : f
+Enter alphabet : g
+Enter alphabet : h
+Enter element to find : d
+The element found at index 2
+
+Process finished with exit code 0
